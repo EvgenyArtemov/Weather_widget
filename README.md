@@ -9,4 +9,4 @@
  **Параметры запуска**
  http-server -a localhost -p 8000
 
- ![](img/screenShot.jpg)
+ ![screenshot](https://i.ibb.co/QkJTSsf/screen-Shot.png)
