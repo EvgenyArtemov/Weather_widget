@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500&display=swap" rel="stylesheet">
+
+
+    <title>Weather widget</title>
+</head>
+<body>
+    <div class="container">
+        <h3 class="city">Волгоград</h3>
+        <span class="line"></span>
+
+        <div class="temp__container">
+            <span class="temp__number">+18</span>
+            <span class="temp__degrees">
+                &deg;C
+            </span>
+            <span class="temp__icon" id="bm">
+                <!-- <img class="temp__icon--image fadeIN__zoomIN" src="./img/overcast.png" alt=""> -->
+            </span>
+        </div>
+
+        <div class="parameter__container">
+            <span class="humidity">
+                <img class="water__icon" src="./img/water.svg" alt="icon">
+                <p class="parag--style humidity__value">70%</p>
+            </span>
+
+            <span class="wind">
+                <img class="wind__icon" src="./img/wind.svg" alt="icon">
+                <p class="parag--style wind__value">9 м/с</p>
+            </span>
+
+            <span class="pressure">
+                <img class="thermometer__icon" src="./img/thermometer.svg" alt="icon">
+                <p class="parag--style pressure__value">749  мм рт. ст.</p>
+            </span>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.5/lottie.min.js" integrity="sha256-tVpznqqKrEwxQ4kPHZW4HR+i/MRmuGHEozkBXm1DMSs=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>
