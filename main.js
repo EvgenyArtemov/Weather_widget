@@ -9,10 +9,11 @@ const DOM = {
 }
 
 let cities = ['Волгоград', 'Москва'];
-let key = '56b81a5e44483f1326acad2e8ebb0158';
-let counter = 0;
+
 
 const control = async (cities) => {
+    let counter = 0;
+    let key = '56b81a5e44483f1326acad2e8ebb0158';
 
     let allWeather = await Promise.all(
         cities.map(async cityName => {
@@ -20,7 +21,7 @@ const control = async (cities) => {
             return cityWeather.json()
         }))
 
-    console.log(allWeather);
+    // console.log(allWeather);
 
     if(allWeather){
         delayFunc();
@@ -32,7 +33,6 @@ const control = async (cities) => {
         if (counter === allWeather.length) {
             counter = 0;
           }
-
           setTimeout(delayFunc, 5000)
      }
 
