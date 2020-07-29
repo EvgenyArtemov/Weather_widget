@@ -76,9 +76,9 @@ const control = async (cities) => {
         DOM.cityHeader.innerText = obj.name;
         DOM.tempNumber.innerText = obj.main.temp < 273.15 ?
     
-        `- ${Math.round(obj.main.temp - 273.15)}` 
+        `-${Math.round(obj.main.temp - 273.15)}` 
         : 
-        `+ ${Math.round(obj.main.temp - 273.15)}`;
+        `+${Math.round(obj.main.temp - 273.15)}`;
     
         DOM.humidity.innerText = `${obj.main.humidity}%`;
         DOM.pressure.innerText = `${Math.round(obj.main.pressure * 0.75)} мм рт. ст.`;

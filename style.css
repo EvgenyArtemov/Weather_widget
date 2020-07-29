@@ -1,123 +1,122 @@
 :root {
-    box-sizing: border-box;
-    --text-color1: #333333 ;
-} 
+  box-sizing: border-box;
+  --text-color1: #333333;
+}
 
 html {
-    font-size: 62.5%;
-    font-family: 'Rubik';
+  font-size: 62.5%;
+  font-family: "Rubik";
 }
 
 .container {
-    max-width: 180px;
-    padding: 3rem;
-    border: 1px solid grey;
+  max-width: 180px;
+  padding: 3rem;
+  border: 1px solid grey;
 }
 
 .city {
-    margin: 0 0 .3rem 0;
-    font-size: 2.8rem;
-    font-weight: 400;
-    color: var(--text-color1);
+  margin: 0 0 0.3rem 0;
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: var(--text-color1);
 }
 
 .line {
-    display: block;
-    border-bottom: 2px solid lightgrey;
-    margin-bottom: 2.6rem;
+  display: block;
+  border-bottom: 2px solid lightgrey;
+  margin-bottom: 2.6rem;
 }
 
 .temp__container {
-    position: relative;
-    display: flex;
-    padding-bottom: 2rem;
+  position: relative;
+  display: flex;
+  padding-bottom: 2rem;
 }
 
 .temp__number {
-    font-size: 6rem;
-    font-weight: 300;
-    color: var(--text-color1);
+  font-size: 6rem;
+  font-weight: 300;
+  color: var(--text-color1);
 }
 
 .temp__degrees {
-    top: .8rem;
-    font-family: 'Roboto';
-    font-size: 1.8rem;
-    font-weight: 400;
-    padding: 1.5rem 2rem 0 0;
-    color: var(--text-color1);
+  top: 0.8rem;
+  font-family: "Roboto";
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding: 1.5rem 2rem 0 0;
+  color: var(--text-color1);
 }
 
 .temp__icon--image {
-    height: 48px;
-    width: auto;
+  height: 48px;
+  width: auto;
 }
 
 .temp__icon {
   position: absolute;
-  right: -1rem;
+  right: -2rem;
   width: 70px;
 }
 
 .water__icon {
-    height: 16px;
-    width: 16px;
+  height: 16px;
+  width: 16px;
 }
 
 .humidity {
-    display: flex;
+  display: flex;
 }
 
 .parag--style {
-    margin: 0;
-    font-size: 1.5rem;
-    font-weight: 300;
-    color: var(--text-color1);
-    padding: 0 0 .4rem .8rem;
-
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--text-color1);
+  padding: 0 0 0.4rem 0.8rem;
 }
 
 .wind {
-    display: flex;
+  display: flex;
 }
 
 .wind__icon {
-    height: 14px;
-    width: 14px;
+  height: 14px;
+  width: 14px;
 }
 
 .pressure {
-    display: flex;
+  display: flex;
 }
 
 .thermometer__icon {
-    height: 14px;
-    width: 14px;
+  height: 14px;
+  width: 14px;
 }
 
 /* Animations */
 
 .fadeIN__up {
-    animation: fadeIn__moveUP 1s;
+  animation: fadeIn__moveUP 1s;
 }
 
 .fadeOUT__down {
-    animation: fadeOUT__moveDOWN 1s;
+  animation: fadeOUT__moveDOWN 1s;
 }
 
 .fadeIN__zoomIN {
-    animation: fadeIn_zoomIN 0.5s;
+  animation: fadeIn_zoomIN 0.5s;
 }
 
 .fadeIN {
-    animation: fadeIN 1s;
+  animation: fadeIN 1s;
 }
 
 .fadeOUT {
-    animation: fadeOUT 1s;
+  animation: fadeOUT 1s;
 }
 
-@keyframes fadeIn__moveUP { 
+@keyframes fadeIn__moveUP {
   0% {
     opacity: 0;
     transform: translateY(0.5rem);
@@ -128,7 +127,7 @@ html {
   }
 }
 
-@keyframes fadeOUT__moveDOWN { 
+@keyframes fadeOUT__moveDOWN {
   0% {
     opacity: 1;
     transform: translateY(0);
@@ -139,18 +138,18 @@ html {
   }
 }
 
-@keyframes fadeIn_zoomIN { 
-    0% {
-      opacity: 0;
-      transform: scale(0);
-    }
-    100% {
-      opacity: 1;
-      transform: scale(1);
-    }
+@keyframes fadeIn_zoomIN {
+  0% {
+    opacity: 0;
+    transform: scale(0);
   }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 
-@keyframes fadeIN { 
+@keyframes fadeIN {
   0% {
     opacity: 0;
   }
@@ -158,7 +157,7 @@ html {
     opacity: 1;
   }
 }
-@keyframes fadeOUT { 
+@keyframes fadeOUT {
   0% {
     opacity: 1;
   }
